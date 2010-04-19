@@ -1,0 +1,17 @@
+# -*- ruby -*-
+
+require 'autotest/restart'
+
+Autotest.add_hook :initialize do |at|
+  at.libs << ':../trunk/lib'
+  at.testlib = 'minitest/unit'
+
+  def at.path_to_classname(s)
+    sep = File::SEPARATOR
+    f = s.sub(/^test#{sep}/, '').sub(/\.rb$/, '').split(sep)
+    f = f.map { |path| path.split(/_|(\d+)/).map { |seg| seg.capitalize }.join }
+    f = f.map { |path| path =~ /^Test/ ? path : "Test#{path}"  }
+    f.join('::').sub 'Rdoc', 'RDoc'
+  end
+end
+

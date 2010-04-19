@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/rdoc/discover.rb
+lib/rdoc/parser/rake.rb
+test/test_rdoc_parser_rake.rb
