@@ -2,9 +2,9 @@
 
 require 'rubygems'
 require 'hoe'
-require 'hoe/git'
 
 Hoe.add_include_dirs '../trunk/lib'
+Hoe.plugin :git
 
 Hoe.spec 'rdoc-rake' do
   self.rubyforge_name = 'rdoc'
