@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'hoe'
+require 'hoe/git'
 
 Hoe.add_include_dirs '../trunk/lib'
 
