@@ -31,7 +31,7 @@ end
 
 class RDoc::Parser::Rake < RDoc::Parser
 
-  VERSION = '1.0'
+  VERSION = '1.0.1'
 
   include RDoc::RubyToken
   include RDoc::TokenStream
@@ -48,6 +48,7 @@ class RDoc::Parser::Rake < RDoc::Parser
     @scanner = RDoc::RubyLex.new content, @options
     @scanner.exception_on_syntax_error = false
     @rake_tasks = @top_level.add_module RDoc::RakeNamespace, 'Rake Tasks'
+    @prev_seek = nil
 
     reset
   end

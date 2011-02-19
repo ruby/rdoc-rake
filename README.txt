@@ -1,6 +1,7 @@
-= rdoc_rake
+= rdoc-rake
 
-* http://rdoc.rubyforge.org/rdoc-rake
+* https://github.com/rdoc/rdoc-rake
+* http://docs.seattlerb.org/rdoc-rake
 
 == DESCRIPTION:
 
@@ -18,7 +19,7 @@ RDoc plugin for documenting rake tasks
 
 == REQUIREMENTS:
 
-* rdoc 2.5+
+* rdoc 3+
 
 == INSTALL:
 

@@ -1,3 +1,9 @@
+=== 1.0.1 / 2010-02-19
+
+* Bug fixes
+  * Updates for move to github
+  * Fixed warning with RDoc 3.5
+
 === 1.0.0 / 2010-04-19
 
 * 1 major enhancement
